@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블 관련 요소 | Techit</title>
+  </head>
+  <style>
+    th,
+    table,
+    td {
+      border: 1px solid currentColor;
+    }
+  </style>
+  <body>
+    <h1>테이블 관련 요소</h1>
+    <table>
+      <caption>
+        과목별 성적표
+      </caption>
+      <!-- scope는 눈으로 보이진 않다만 접근성 측면에서 제목이 어떤 열 혹은 행에 영향을 주는지 알 수 있다. -->
+      <thead>
+        <tr>
+          <th scope="col">이름</th>
+          <th scope="col">HTML</th>
+          <th scope="col">CSS</th>
+          <th scope="col">JS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">홍길동</th>
+          <td>95</td>
+          <td>87</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <th scope="row">홍갈삼</th>
+          <td>9</td>
+          <td>7</td>
+          <td>92</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="row">후추</th>
+          <td>95</td>
+          <td>87</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <th scope="row">주연</th>
+          <td>999</td>
+          <td>777</td>
+          <td>999</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+        <th>Venue</th>
+      </tr>
+      <tr>
+        <td>12 February</td>
+        <td>Waltz with Strauss</td>
+        <td>Main Hall</td>
+      </tr>
+    </table>
+    <hr />
+    <!-- 내가 짠 코드 -->
+    <table>
+      <tbody>
+        <tr>
+          <th scope="col">학습시간</th>
+          <td>09:00 ~ 17:00 (28시간)</td>
+          <th scope="col">난이도</th>
+          <td>초급</td>
+        </tr>
+        <tr>
+          <th scope="col">교육비 지원</th>
+          <td>고용보험 비환급</td>
+          <th scope="col">평가항목</th>
+          <td>출석률 100%</td>
+        </tr>
+        <tr>
+          <th scope="col">수료기준</th>
+          <td>총점 80점 이상시 수료</td>
+          <th scope="col">정원</th>
+          <td>24명</td>
+        </tr>
+        <tr>
+          <th scope="col">교재정보</th>
+          <td colspan="3">
+            입문자를 위한 GIT과 HTML &amp; CSS <br />
+            HTML &amp; CSS 웹사이트 개발과 디자인 기초 (35,000원)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <hr />
+    <!-- 슬비쌤 코드 -->
+    <table class="lecture-table">
+      <caption>
+        입문자를 위한 Git과 HTML&CSS 과정
+        <span>학습시간, 난이도, 교육비 지원, 평가항목, 수료기준, 정원, 교재 정보 등을 나타낸 표</span>
+      </caption>
+      <tr>
+        <th id="study-time">학습시간</th>
+        <td headers="study-time">09:00 ~ 17:00 ( 28시간 )</td>
+        <th id="difficulty">난이도</th>
+        <td headers="difficulty">초급</td>
+      </tr>
+      <tr>
+        <th id="educational-expenses">교육비 지원</th>
+        <td headers="educational-expenses">고용보험 비환급</td>
+        <th id="evaluation-items">평가항목</th>
+        <td headers="evaluation-items">출석률 100%</td>
+      </tr>
+      <tr>
+        <th id="completion-criteria">수료기준</th>
+        <td headers="completion-criteria">총점 80점 이상시 수료</td>
+        <th id="class-capacity">정원</th>
+        <td headers="class-capacity">24 명</td>
+      </tr>
+      <tr>
+        <th id="learning-textbook">교재정보</th>
+        <td colspan="3" headers="learning-textbook">
+          입문자를 위한 Git과 HTML&CSS<br />
+          HTML & CSS 웹사이트 개발과 디자인 기초 (35,000원)
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
