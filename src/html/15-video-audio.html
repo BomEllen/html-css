@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비디오 및 iframe 요소 | Techit</title>
+  </head>
+  <body>
+    <h1>비디오 포함하기</h1>
+    <figure>
+      <!-- 오토플레이만 넣으면 자동 재생 안됨. 뮤티드를 함께 넣어햐 함. 왜냐면 접근성때문에. 사이트 들어가자마자 
+      소리가 나오면서 영상이 재생되면 스크린리더가 작동할새도 없이 시끄럽게 소리가 켜지기 때문. -->
+      <video class="fullsize" poster="../assets/video/poster.jpg" controls autoplay muted>
+        <source src="../assets/video/google-developer-stories.mp4" type="video/mp4" />
+        <source src="../assets/video/google-developer-stories.mov" type="video/mov" />
+        <source src="../assets/video/google-developer-stories.ogg" type="video/ogg" />
+        <source src="../assets/video/google-developer-stories.webm" type="video/webm" />
+        <track src="../assets/video/google-developer-stories-subtitles-en.vtt" kind="captions" srclang="en" label="English Caption" />
+      </video>
+      <figcaption>구글 개발자 이야기</figcaption>
+    </figure>
+
+    <hr />
+    <!-- 비디오를 한 유형으로만 넣으려면 바로 비디오태그에 넣어줄 수 있다. -->
+    <video src="./../assets/video/google-developer-stories.mp4" class="fullsize" poster="../assets/video/poster.jpg" controls autoplay muted>
+      <track src="../assets/video/google-developer-stories-subtitles-en.vtt" kind="captions" srclang="en" label="English Caption" />
+    </video>
+
+    <hr />
+
+    <figure>
+      <div class="iframe-container iframe16">
+        <!-- iframe은 html 문서 안에 따로 구멍을 하나 뚫어놓고, ifram의 html 문서를 따로 보여주는 것. -->
+        <iframe class="fullsize" width="560" height="315" aria-label="웹접근성과 웹표준 개념" title="웹접근성과 웹표준 개념" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/fUcIe7-2zxw"></iframe>
+      </div>
+    </figure>
+    <figcaption>iframe을 이용한 비디오 삽입</figcaption>
+  </body>
+</html>
