@@ -1,0 +1,38 @@
+.container div {
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.container {
+  border: 5px solid currentColor;
+  display: flow-root;
+  /* hidden 은 부작용이 있다. 위 flow root를 사용하자. */
+  /* overflow: hidden; */
+}
+div.box1 {
+  background-color: tomato;
+  float: left;
+  inline-size: 100px;
+}
+div.box2 {
+  background-color: rgb(235, 154, 231);
+  height: auto;
+  block-size: auto;
+  line-height: 1;
+  text-align: left;
+}
+div.box3 {
+  background-color: rgb(75, 241, 111);
+  clear: both;
+  /* margin-top: 20px; */
+  width: 200px;
+  inline-size: 200px;
+  float: right;
+}
+div.box4 {
+  background-color: yellow;
+  width: 300px;
+  inline-size: 300px;
+  float: right;
+}
