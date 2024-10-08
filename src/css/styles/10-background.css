@@ -1,0 +1,37 @@
+@import "./../../common/modern-reset.css";
+
+body {
+  margin: 50px;
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  background-color: rgb(245, 245, 157);
+  background-image: url(./../../assets/images/rabbit.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 100px 120px;
+  background-attachment: fixed;
+}
+
+.bg-text-gradient {
+  font-size: 3.5rem;
+  margin-block: 20px;
+  font-weight: 900;
+  background-color: lightblue;
+  background-image: linear-gradient(red, orange, green, blue, purple);
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-origin {
+  width: 800px;
+  inline-size: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline: auto;
+  /* background-color: pink;
+  background-image: url(./../../assets/thumbnail/meeting-room.jpg);
+  background-origin: border-box; */
+  padding: 20px;
+  border: 20px solid hsla(350 50% 50% / 0.2);
+  /* 단축 표기법 */
+  background: salmon url(./../../assets/thumbnail/meeting-room.jpg) border-box;
+}
