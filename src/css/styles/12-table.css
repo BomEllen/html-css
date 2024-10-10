@@ -1,0 +1,60 @@
+@import "./../../common/modern-reset.css";
+
+body {
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  margin: 50px;
+}
+
+/* 테이블 스타일링 */
+.table-wrapper {
+  height: 625px;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.table-styling {
+  table-layout: fixed; /* fixed를 쓰는게 성능상 이점이 있다. auto는 테이블 크기를 알아서 계산해야해서 계산 량이 많아짐. */
+  border: 1px solid currentColor;
+  border-collapse: collapse; /* 외각선 겹치는건 합쳐주기 */
+  border-spacing: 0;
+  width: 100%;
+
+  .number {
+    inline-size: 10%;
+  }
+  .name {
+    inline-size: 20%;
+  }
+  .email {
+    inline-size: 40%;
+  }
+  .phone {
+    inline-size: 30%;
+  }
+
+  th {
+    background-color: tan;
+  }
+
+  thead {
+    position: sticky;
+    top: 0;
+    inset-block-start: 0px;
+  }
+  tbody tr {
+    /* 스크롤 할 때 열 단위로 스크롤 되는. 열 중간에 걸치는게 아니라. */
+    scroll-snap-align: start;
+  }
+
+  th,
+  td,
+  thead {
+    border: 1px solid currentColor; /*강제 상속 시키기*/
+    /* em으로 쓰는 이유는 테이블의 글자 크기에 따라 달라지기 때문에 반응형에 좋다. */
+    padding: 1em;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: silver;
+  }
+}
