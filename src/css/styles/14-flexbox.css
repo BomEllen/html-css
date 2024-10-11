@@ -1,0 +1,64 @@
+@import "./../../common/mini-reset.css";
+@import "./../../common/base.css";
+
+body,
+h1 {
+  margin: 50px;
+}
+
+h2 {
+  border: 1px solid currentColor;
+  width: 300px;
+  height: 100px;
+  line-height: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+.flex-basic {
+  background-color: yellow;
+  width: 600px;
+  height: 600px;
+  box-shadow: 1px 1px 0 0 currentColor, -1px -1px 0 0 currentColor; /* 테두리 만들기 */
+  margin-block: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: start;
+  align-content: start;
+  /* gap: 20px; */
+}
+
+.flex-item {
+  background-color: pink;
+  /* inline-size: 500px; */
+  flex-basis: 0;
+  block-size: 100px;
+}
+
+.flex-item:nth-child(odd) {
+  order: 1;
+}
+
+.flex-item1 {
+  flex-shrink: 1;
+  flex-grow: 1;
+  background-color: orange;
+}
+
+.flex-item2 {
+  flex-shrink: 1;
+  flex-grow: 1;
+  background-color: greenyellow;
+}
+
+.flex-item3 {
+  flex-shrink: 1;
+  flex-grow: 1;
+  background-color: olive;
+}
+
+.flex-item4 {
+  flex-shrink: 1;
+  flex-grow: 1;
+}
