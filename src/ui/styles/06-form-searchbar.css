@@ -15,25 +15,23 @@ select {
 /* 로고 컴포넌트 */
 .brand {
   margin: 0;
-  font-size: 1em; /* 이미지 사이즈에 꼭 맞게 하려고 */
+  font-size: 1em;
   font-weight: 400;
 
   a,
   svg {
-    display: block; /* 이미지인 로고는 베이스라인에 배치되어 있음으로? 잘 모르겠음 */
+    display: block;
   }
 }
 
 /* 검색 버튼 컴포넌트 */
 .button--icon-circle {
-  /* appearance: none; 기본 스타일 없애기 */
-  /* all: unset; 근데 버튼은 기본 스타일 이걸로 해야 지워짐 */
   border: 0;
   padding: 0;
   background-color: transparent;
 
   svg {
-    display: block; /* 이것도 왜 했더라.. */
+    display: block;
   }
 }
 
@@ -68,7 +66,7 @@ select {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  gap: 12px;
+  gap: 48px;
 
   &:focus-within {
     box-shadow: 0px 4px 4px 0px rgba(68, 131, 63, 0.15);
@@ -80,10 +78,6 @@ select {
 
   .search-form {
     display: contents;
-    /* flex-flow: row nowrap;
-    align-items: center;
-    gap: 16px;
-    flex: 1; */
 
     .search {
       flex: 1;
