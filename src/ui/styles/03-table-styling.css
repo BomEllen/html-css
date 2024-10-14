@@ -4,25 +4,31 @@ body {
   font-family: "Pretendard Variable", Pretendard, sans-serif;
   margin: 2rem;
 }
-
 table {
-  color: #24388d;
-  width: 710px;
-  height: 594px;
+  border: 1px solid black;
+  border-collapse: collapse; /* 보더 겹침 방지 */
 }
-
-p {
-  color: #878787;
+caption {
+  display: none;
 }
-
-table,
-tr,
-td,
-th {
-  border: 1px solid currentColor;
+td {
+  height: 90px;
 }
-
+th,
+td {
+  border: 1px solid black;
+}
 .thumbnail {
   width: 60px;
   height: 60px;
+  margin: 15px 10px;
+}
+.news-number {
+  width: 46px;
+}
+.news-content {
+  width: 579px;
+}
+.news-date {
+  width: 85px;
 }

@@ -6,6 +6,28 @@ div:not(#awebChromeHelper) {
   padding: 10px;
 }
 
+/* 요소 박스 위치 지정 (percentage-value) */
+/* content-box : margin + padding + border + width */
+/* border-box : margin + width(border + padding) */
+
+.percentage-value {
+  border: 1px solid currentColor;
+  padding: 10px !important;
+  margin: 1em !important;
+  font-size: 1rem !important;
+  width: 200px;
+
+  p {
+    margin: 0;
+    padding: 10%;
+    border: inherit;
+    position: relative;
+    left: 50%;
+    inset-inline-start: 50%;
+    background-color: tomato;
+  }
+}
+
 .static {
   background: yellow;
 }
@@ -19,7 +41,7 @@ div:not(#awebChromeHelper) {
 
 .relative-wrapper {
   position: relative;
-  inset-block-start: 50px;
+  inset-block-start: 250px;
   inset-inline-start: 50px;
 }
 .absolute-wrapper {
