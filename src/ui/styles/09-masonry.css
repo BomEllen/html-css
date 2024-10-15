@@ -1,0 +1,55 @@
+@import url(./../../common/base.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.masonry-layout {
+  columns: 4;
+
+  figure {
+    margin: 2rem 0;
+    border: 1px solid currentColor;
+    padding: 1rem;
+    position: relative;
+
+    &:first-child {
+      margin-block-start: 0;
+    }
+  }
+
+  img {
+    max-inline-size: 100%;
+    display: block;
+    filter: sepia();
+  }
+
+  figcpation {
+    background: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    inset-block-end: 1rem;
+    padding: 1rem;
+    color: #fff;
+    /* backdrop-filter: blur(10px); */
+    inset: 1rem;
+
+    &:hover {
+      filter: none;
+    }
+  }
+
+  /* .cat figcpation {
+    inset-block: 1rem;
+    inset-inline: 1rem;
+  }
+  .dog figcpation {
+    inset-block-start: 1rem;
+    inset-inline-end: 1rem;
+  }
+  .unsplash figcpation {
+    inset-block-end: 1rem;
+    inset-inline-end: 1rem;
+  } */
+}
