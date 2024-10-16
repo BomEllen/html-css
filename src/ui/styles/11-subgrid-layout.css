@@ -1,0 +1,15 @@
+@import url(./../../common/modern-reset.css);
+@import url(./../../common/base.css);
+
+body {
+  margin: 0;
+}
+
+.container {
+  min-inline-size: 960px;
+  border: 1px solid green;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(12, minmax(54px)); /*fr은 보이는 화면 기준으로 나눠 줌. 가로 스크롤 생기지 않아요~  5는 컬럼 갯수, 1은 각 컬럼이 가져야 할 크기. */
+  grid-template-rows: repeat(8, 1fr);
+}
