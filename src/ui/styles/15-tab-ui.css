@@ -1,0 +1,65 @@
+@import url(./../../common/modern-reset.css);
+@import url(./../../common/base.css);
+
+/* tab UI */
+a {
+  color: black;
+  text-decoration-line: none;
+}
+
+.tab-container {
+  margin-block: 1rem;
+  inline-size: 380px;
+  font-size: 0.875rem;
+}
+
+.tab {
+  background-color: #cccccc;
+  border-top-left-radius: 0.3125rem;
+  border-top-right-radius: 0.3125rem;
+  color: #4b4b4b;
+  border: 1px solid #999999;
+}
+.tab:hover {
+  background-color: white;
+  border-top-left-radius: 0.3125rem;
+  border-top-right-radius: 0.3125rem;
+  color: #ed552f;
+  border: 1px solid #ed552f;
+  border-bottom: none;
+}
+
+.tab-list {
+  height: 2.375rem;
+  margin-block-end: 1rem;
+  display: flex;
+}
+
+/* 게시판 UI */
+
+.tab-panel ul {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tab-panel li {
+  display: contents; /* li 요소는 그리드 항목으로 사용되지 않도록 설정 */
+}
+
+.tab-panel li a {
+  grid-column: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tab-panel li a span {
+  margin-inline-end: 0.2rem;
+}
+
+.tab-panel li time {
+  grid-column: 2;
+  text-align: right;
+}
