@@ -1,0 +1,36 @@
+@import "./../../common/modern-reset.css";
+@import "./../../common/base.css";
+
+body {
+  margin: 1.25rem;
+  background-color: rgb(244, 250, 201);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h2 {
+  margin-block-end: 1.875rem;
+  color: white;
+}
+
+ul {
+  list-style: decimal;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.html-container {
+  background-color: #9ecf8b;
+  border: 4px dashed #608a4f;
+  border-radius: 30px;
+}
+.css-container {
+}
+.ui-container {
+}
