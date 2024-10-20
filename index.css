@@ -1,9 +1,22 @@
 @import "./../../common/modern-reset.css";
 @import "./../../common/base.css";
+@font-face {
+  font-family: "KimjungchulMyungjo-Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulMyungjo-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --body-background: #e3fdfd;
+  --container-background: #71c9ce;
+  --container-border: #cbf1f5;
+}
 
 body {
   margin: 1.25rem;
-  background-color: rgb(244, 250, 201);
+  background-color: var(--body-background);
+  font-family: KimjungchulMyungjo-Bold;
 }
 
 h1,
@@ -20,17 +33,39 @@ ul {
   list-style: decimal;
 }
 
+a {
+  text-decoration-line: none;
+  color: black;
+}
+
+li {
+  line-height: 1.875rem;
+}
+
+li:hover {
+  transform: scale(1.03);
+}
+
 .container {
   display: flex;
   justify-content: space-around;
 }
 
 .html-container {
-  background-color: #9ecf8b;
-  border: 4px dashed #608a4f;
-  border-radius: 30px;
+  width: 16.875rem;
+  background-color: var(--container-background);
+  border: 4px dashed var(--container-border);
+  border-radius: 20px;
 }
 .css-container {
+  width: 16.875rem;
+  background-color: var(--container-background);
+  border: 4px dashed var(--container-border);
+  border-radius: 20px;
 }
 .ui-container {
+  width: 16.875rem;
+  background-color: var(--container-background);
+  border: 4px dashed var(--container-border);
+  border-radius: 20px;
 }
